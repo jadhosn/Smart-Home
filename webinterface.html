@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I-HAAVE Web Interface</title>
+	<style>
+		.center2 {
+		    margin: auto;
+		    width: 10.5%;
+		}
+		.center1 {
+		    margin: auto;
+		    width: 7.3%;
+		}
+</style>
+</head>
+<body>
+<h1 style="color:red; text-align: center; ">I-HAAVE Web Interface</h1>
+
+<h3 style="text-align: center;">FAN SPEED</h3>
+<div class="center1">
+	<form method="GET" action="/fanSpeed">
+		<input type="number" id="speed" min="0" max="999" value="0" /><input type="submit"/>
+	</form>
+</div>
+
+<h3 style="text-align:center">CHANGE LIGHT COLOR</h3>
+<div class="center2">
+	<form style="float: left" action="/redLight">
+		<input type="submit" value="RED"/>
+	</form>
+	<form style="float: left" action="/greenLight">
+		<input type="submit" value="GREEN"/>
+	</form>
+	<form style="float: left" action="/blueLight">
+		<input type="submit" value="BLUE"/>
+	</form>
+</div>
+</body>
+</html>
